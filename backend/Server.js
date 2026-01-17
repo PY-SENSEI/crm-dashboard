@@ -1,6 +1,12 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+import cors from "cors";
+import helmet from "helmet";
+import rateLimit from "express-rate-limit";
+import authRoutes from "./routes/auth.js";
+import leadRoutes from "./routes/leads.js";
+import analyticsRoutes from "./routes/analytics.js";
 
 dotenv.config();
 
